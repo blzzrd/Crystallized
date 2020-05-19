@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Playlist</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <meta name="theme-color" content="#fafafa">
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+
+
+
+
+
+  <style type="text/css">
+    * {
+      box-sizing: border-box;
+    }
+    html, body {
+      height: 100%;
+    }
+
+    body {
+      color: #222;
+      font-family: "Helvetica Neue", sans-serif;
+      font-weight: 200;
+      margin: 0 50px;
+    }
+
+    .react-draggable, .cursor {
+      cursor: move;
+    }
+    .no-cursor {
+      cursor: auto;
+    }
+    .cursor-y {
+      cursor: ns-resize;
+    }
+    .cursor-x {
+      cursor: ew-resize;
+    }
+
+    .react-draggable strong {
+      background: #ddd;
+      border: 1px solid #999;
+      border-radius: 3px;
+      display: block;
+      margin-bottom: 10px;
+      padding: 3px 5px;
+      text-align: center;
+    }
+
+    .box {
+      background: #fff;
+      border: 1px solid #999;
+      border-radius: 3px;
+      width: 180px;
+      height: 180px;
+      margin: 10px;
+      padding: 10px;
+      float: left;
+    }
+  </style>
+</head>
+
+
+<body>
+  <div class="container-fluid h-100">
+    <div class="row h-100">
+      <div class="col-3 edit_background scrollable">
+        This should be the side bar for the stackable elements.
+        This should be the side bar for the stackable elements.
+        This should be the side bar for the stackable elements.
+        This should be the side bar for the stackable elements.
+        This should be the side bar for the stackable elements.
+        This should be the side bar for the stackable elements.
+        This should be the side bar for the stackable elements.
+
+        <div class="song_container">
+          <div class="song_title"> Song Title </div>
+          <div class="song_artist"> Artist - Album</div>
+        </div>
+
+      </div>
+
+      <div class="col-9">
+        <div id="drgbl">
+
+
+        </div>
+
+
+
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="js/edit.js"></script>
+
+  <script src="//unpkg.com/react@16/umd/react.development.js"></script>
+  <script src="//unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+  <script src="/node_modules/react-draggable/build/web/react-draggable.min.js"></script>
+
+  <!-- Replace with an actual yarn -->
+  <!-- Draggable only -->
+  <script src="https://cdn.jsdelivr.net/npm/@shopify/draggable@1.0.0-beta.6/lib/draggable.js"></script>
+  <!-- Sortable only -->
+  <script src="https://cdn.jsdelivr.net/npm/@shopify/draggable@1.0.0-beta.6/lib/sortable.js"></script>
+
+  <!-- for imported script -->
+  <script src="//unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script type="text/babel" src="js/edit.js"></script>
+</body>
+</html>

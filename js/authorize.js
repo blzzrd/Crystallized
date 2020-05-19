@@ -1,6 +1,12 @@
 sample_link = 'https://open.spotify.com/playlist/1SfxpsSNGw0w4r7E3JEkKK?si=P9266UnARQCJP1yemuu00';
 sample_uri = 'spotify:playlist:1SfxpsSNGw0w4r7E3JEkKK';
 
+
+document.getElementById('editBtn').onclick = function () {
+    location.href = "edit.html";
+}
+
+
 function authorize() {
   url = 'https://accounts.spotify.com/authorize';
   client_id = '95ef002a6ed240e2a5c91268bd8f64ba';
